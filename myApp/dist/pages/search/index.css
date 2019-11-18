@@ -1,0 +1,102 @@
+
+html,
+body {
+  height: 100%; }
+
+.warp {
+  padding: 0 12PX; }
+
+.self_btn {
+  background: #4A90E2;
+  color: #fff;
+  text-align: center;
+  font-size: 17PX;
+  border-radius: 32PX;
+  padding: 13PX;
+  margin: 40PX 0; }
+
+.center {
+  text-align: center; }
+
+.submit {
+  font-size: 17PX;
+  padding: 13PX 0;
+  background: #4A90E2;
+  text-align: center;
+  border-radius: 32PX;
+  margin: 60PX auto;
+  color: #fff; }
+
+.unsubmit {
+  background: #F5F5F5;
+  color: #464646; }
+
+.hide {
+  display: none; }
+
+.detail-origin {
+  padding-left: 20PX; }
+
+.detail {
+  line-height: 30PX; }
+
+
+.search_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10PX 0; }
+  .search_container .input_container {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 18PX;
+    background: #f5f5f5;
+    padding: 8PX 10PX; }
+    .search_container .input_container .search_input {
+      font-size: 14PX;
+      line-height: 14PX; }
+    .search_container .input_container .search_input::-webkit-input-placeholder {
+      color: #bebebe; }
+    .search_container .input_container .search_input::-moz-placeholder {
+      color: #bebebe; }
+    .search_container .input_container .search_input::-ms-input-placeholder {
+      color: #bebebe; }
+    .search_container .input_container .search_input::placeholder {
+      color: #bebebe; }
+  .search_container .search_btn {
+    height: 17PX;
+    font-size: 17PX;
+    font-weight: 400;
+    color: #969696;
+    line-height: 17PX;
+    margin: 5PX 11PX 8PX; }
+
+.search_tip {
+  text-align: center;
+  color: #969696;
+  font-size: 14PX;
+  margin: 50PX auto;
+  font-weight: 400; }

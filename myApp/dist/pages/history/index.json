@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "hitem": "../../components/hItem"
+  },
+  "navigationBarTitleText": "提交记录"
+}

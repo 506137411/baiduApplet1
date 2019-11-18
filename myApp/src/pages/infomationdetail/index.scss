@@ -1,0 +1,33 @@
+.detail-title {
+    font-size: 22PX;
+    line-height: 31PX;
+}
+
+.detail-time {
+    font-size: 13PX;
+    padding: 8PX 0;
+    color: #B9B9B9;
+
+    View {
+        padding-right: 18PX;
+    }
+}
+
+.detail_des {
+    font-size: 17PX;
+    line-height: 30PX;
+    font-weight: 400;
+    color: #262628;
+}
+
+.detail_links {
+    font-size: 15PX;
+    padding: 15PX 0;
+
+    .detail_link {
+        color: #3495FF;
+        word-wrap: break-word;
+        word-break: normal;
+        word-break: break-all;
+    }
+}

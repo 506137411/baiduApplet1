@@ -1,0 +1,63 @@
+<template name="renderImg">
+    <block>
+        <block s-if="{{currentAns}}">
+            <block>
+                <block s-if="{{anonymousState__temp20}}">
+                    <image src="{{anonymousState__temp}}" style="{{anonymousState__temp2}}"></image>
+                </block>
+                <block s-else>
+                    <image src="{{anonymousState__temp3}}" style="{{anonymousState__temp4}}"></image>
+                </block>
+            </block>
+        </block>
+    </block>
+</template>
+<block s-if="{{$taroCompReady}}">
+    <view class="warp rumor_container">
+        <view class="rumor_container_content">
+            <block s-if="{{list.length}}">
+                <view class="rumor_detial_container">
+                    <block s-for="loopArray24" s-for-item="item" s-for-index="index">
+                        <block s-if="{{index === currentIndex}}">
+                            <view class="rumor_detial_container_c">
+                                <view>
+                                    <image src="{{item.loopState__temp10}}" style="{{item.loopState__temp12}}"></image>
+                                </view>
+                                <view class="rumor_des">{{index + 1}}.{{item.privateOriginal.question}}</view>
+                                <view class="rumor_btn_container">
+                                    <view class="{{item.loopState__temp14}}" catchtap="getAnswer" data-e-tap-so="this" data-e-tap-a-a="{{1}}"><text>是谣言</text>
+                                        <template is="renderImg" data="{{{...item.loopState__temp6}}}"></template>
+                                    </view>
+                                    <view class="{{item.loopState__temp16}}" catchtap="getAnswer" data-e-tap-so="this" data-e-tap-a-a="{{2}}"><text>非谣言</text>
+                                        <template is="renderImg" data="{{{...item.loopState__temp8}}}"></template>
+                                    </view>
+                                </view>
+                            </view>
+                        </block>
+                    </block>
+                    <block s-if="{{currentIndex === list.length}}">
+                        <view class="rumor_detial_container_c">
+                            <view>
+                                <image src="{{anonymousState__temp17}}" style="{{anonymousState__temp18}}"></image>
+                            </view>
+                            <view class="rumor_des">{{anonymousState__temp19}}</view>
+                        </view>
+                    </block>
+                </view>
+            </block>
+        </view>
+        <view class="self_btn_container">
+            <block>
+                <block s-if="{{list && currentIndex === list.length}}">
+                    <view class="self_btn" catchtap="going" data-e-tap-so="this">返回首页</view>
+                </block>
+                <block s-else>
+                    <view class="{{currentAnsx ? 'self_btn' : 'unsubmit self_btn'}}" catchtap="going" data-e-tap-so="this">下一题</view>
+                </block>
+            </block>
+        </view>
+        <block s-if="{{showMask}}">
+            <mask compid="{{$compid__19}}">{{list[currentIndex].description}}</mask>
+        </block>
+    </view>
+</block>

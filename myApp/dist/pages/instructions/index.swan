@@ -1,0 +1,15 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <view>
+            <view class="instruction_item" s-for="list" s-for-item="item" s-for-index="index">{{index + 1 + '.' + item.content}}</view>
+            <view>
+                <checkbox-group catchtap="checkboxChange" data-e-tap-so="this">
+                    <label class="checkbox-list__label">
+                        <checkbox class="checkbox-list__checkbox" value="true" checked="{{isChecked}}"></checkbox><text>我已认真阅读<text class="special_text">《填写须知》</text>并同意改协议</text>
+                    </label>
+                </checkbox-group>
+            </view>
+        </view>
+        <view class="{{anonymousState__temp}}" catchtap="agreeFn" data-e-tap-so="this">下一步</view>
+    </view>
+</block>

@@ -1,0 +1,23 @@
+.container {
+  height: 100%;
+}
+.warp {
+  height: 90%;
+}
+
+.history_content_tip {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+
+.history_content_tip_view {
+  flex: 1;
+}
+
+.history_tip {
+  font-size: 16PX;
+  padding-top:27PX;
+  color: #b9b9b9;
+}

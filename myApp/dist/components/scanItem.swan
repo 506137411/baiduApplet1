@@ -1,0 +1,19 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="item" bindtap="navigateTo" data-e-tap-so="this" data-e-tap-a-a="{{id}}">
+        <view class="item_img">
+            <image src="{{cover}}" style="{{anonymousState__temp3}}"></image>
+        </view>
+        <view class="item_content">
+            <view class="item_title">{{title}}</view>
+            <view class="item_second">
+                <view>
+                    <block s-for="loopArray21" s-for-item="item" s-for-index="index" s-key="privateOriginal.kid">
+                        <block s-if="{{item.privateOriginal.keyword}}"><text class="item_tag">{{item.loopState__temp2}}</text>
+                        </block>
+                    </block>
+                </view><text>{{shelve_time}}</text>
+            </view>
+            <view class="item_four">{{expert_info}}</view>
+        </view>
+    </view>
+</block>

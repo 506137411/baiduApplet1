@@ -1,0 +1,12 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <view class="detail-title">{{title}}</view>
+        <view class="detail-time"><text>{{shelve_time}}</text><text class="detail-origin">{{origin}}</text>
+        </view>
+        <view class="detail">{{content}}</view>
+        <block s-if="{{cover}}">
+            <view class="detail_links"><text>谣言网址：</text><text class="detail_link" bindtap="linkHandler" data-e-tap-so="this" data-e-tap-a-a="{{cover}}">{{cover}}</text>
+            </view>
+        </block>
+    </view>
+</block>

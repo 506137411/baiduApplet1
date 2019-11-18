@@ -1,0 +1,25 @@
+{
+    "editor": {
+        "curPath": "/Users/zhengxiaohui/workspace/xiaochengxu/myApp/package.json",
+        "expands": [],
+        "markdownUploadTimeMap": {},
+        "paths": [
+            "/Users/zhengxiaohui/workspace/xiaochengxu/myApp/package.json"
+        ],
+        "recentlyFiles": [
+            "/Users/zhengxiaohui/workspace/xiaochengxu/myApp/package.json",
+            "/Users/zhengxiaohui/workspace/xiaochengxu/myApp/project.swan.json",
+            "/Users/zhengxiaohui/workspace/xiaochengxu/myApp/project.config.json"
+        ]
+    },
+    "host": "baiduboxapp",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.6.5",
+            "swanJsVersion": "3.110.17"
+        }
+    }
+}

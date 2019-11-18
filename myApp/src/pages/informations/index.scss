@@ -1,0 +1,57 @@
+.container {
+    background: #F5F5F5;
+    // height: 100%;
+    overflow: hidden;
+    .warp{
+        height: 100%;
+    }
+
+    .history {
+        text-align: right;
+        font-size: 14PX;
+        color: #464646;
+        padding: 15PX 0 10PX;
+    }
+
+    .info_item {
+        margin: 10PX auto;
+        font-size: 16PX;
+        overflow: hidden;
+        border-radius: 6PX;
+        background: #fff;
+    }
+
+    .info_item_link {
+        color: #2890FF;
+    }
+
+    Input {
+
+        padding: 17PX 13PX;
+    }
+
+    Textarea {
+        padding: 17PX 13PX;
+        flex: 1;
+        font-size: 16PX;
+        width: calc(100% - 26PX);
+        background: chocolate;
+    }
+
+    Input::placeholder,
+    Textarea::placeholder {
+        color: #B9B9B9;
+    }
+
+    .info_item_tip_info {
+        text-align: right;
+        color: #B9B9B9;
+        font-size: 14PX;
+
+        .info_item_tip_info_text {
+            padding-right: 13PX;
+        }
+    }
+
+
+}

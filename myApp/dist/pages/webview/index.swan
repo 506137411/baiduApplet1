@@ -1,0 +1,5 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <web-view src="{{url}}"></web-view>
+    </view>
+</block>

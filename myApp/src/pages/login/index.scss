@@ -1,0 +1,26 @@
+.login_container {
+    overflow: hidden;
+
+    .login_container_line {
+        overflow: hidden;
+        display: flex;
+        border-bottom: 1PX solid #F5F5F5;
+        align-items: center;
+        justify-content: space-around;
+        padding: 24PX 0;
+
+        Input {
+            font-size: 17PX;
+            flex: 1;
+            padding: 0 10PX;
+        }
+
+        .getCode {
+            background: #F5F5F5;
+            color: #464646;
+            border-radius: 17PX;
+            font-size: 13PX;
+            padding: 6PX 18PX;
+        }
+    }
+}

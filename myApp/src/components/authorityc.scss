@@ -1,0 +1,107 @@
+.container {
+    height: 100%;
+
+    .tab_container {
+        height: 100%;
+    }
+}
+
+.container_i {
+    height: 100%;
+
+    .tab_container {
+        height: auto;
+    }
+
+    .tab_container_c {
+        position: static;
+
+        .tab_c {
+            padding-top: 0;
+            position: static;
+        }
+    }
+}
+
+.tab_container_t {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+    height: 50PX;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .tab_container_t_c {
+        flex: 1;
+        text-align: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 15PX 8PX;
+
+        .tab_t {
+            width: 64PX;
+            line-height: 32PX;
+            font-size: 16PX;
+            display: inline-block;
+            padding: 0 12PX;
+            color: #969696;
+            position: relative;
+
+            .tab_brdge {
+                position: absolute;
+                right: -8PX;
+                top: -6PX;
+                z-index: 2;
+                font-size: 12PX;
+                line-height: 12PX;
+                padding: 3PX 5PX;
+                color: #ffffff;
+                background: #f24055;
+                border-radius: 8PX;
+            }
+        }
+
+        .active {
+            color: #4A90E2;
+        }
+    }
+
+}
+
+
+
+.tab_container_c {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    .tab_c {
+        padding-top: 50PX;
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+
+        .tab_c_scroll_view {
+            height: calc(100% - 70PX);
+        }
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+
+.tab_container_t_i {
+    position: static;
+}
+
+.tab_container_c_i {
+    position: static;
+}

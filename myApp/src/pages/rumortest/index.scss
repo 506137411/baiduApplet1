@@ -1,0 +1,113 @@
+.rumor_container {
+  height: 100%;
+  background: #f5f5f5;
+  padding: 0 20PX;
+  overflow: hidden;
+
+  .rumor_container_content {
+    overflow: hidden;
+    margin: 21PX auto;
+    height: calc(100% - 90PX - 42PX);
+    border-radius: 16PX;
+    box-shadow: 0PX 0PX 10PX 0PX rgba(74, 144, 226, 0.28);
+    background: #ffffff;
+
+    .rumor_detial_container {
+      padding: 28PX;
+      // height: 100%;
+      // height: calc( 100% - 28PX -28PX);
+      height: calc(100% - 56PX);
+
+      .rumor_detial_container_c {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .rumor_des {
+        flex: 1;
+      }
+    }
+  }
+
+  .self_btn_container {
+    overflow: hidden;
+    margin: 0 24PX;
+
+    .self_btn {
+      margin: initial;
+      font-size: 17PX;
+    }
+  }
+}
+
+View {
+  box-sizing: border-box;
+}
+
+.rumor_btn_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .rumor_btn {
+    display: flex;
+    align-items: center;
+    padding: 0 32PX;
+    font-size: 17PX;
+    border-radius: 32PX;
+    border: 1PX solid #969696;
+    color: #969696;
+    height: 36PX;
+  }
+  .rumor_btn_true {
+    background: #65d69f;
+    color: #fff;
+    border: none;
+    padding: 0 16PX;
+  }
+  .rumor_btn_false {
+    background: #f1354b;
+    color: #fff;
+    border: none;
+    padding: 0 16PX;
+  }
+}
+
+.unsubmit{
+  background: #cccccc;
+  color: #000;
+}
+
+// .rumor_true {
+//     .rumor_btn:first-child {
+//         background: #65D69F;
+//         color: #fff;
+//         border: none;
+//         padding: 0 32PX;
+//     }
+
+//     .rumor_btn:last-child {
+//         background: #F1354B;
+//         color: #fff;
+//         border: none;
+//         padding: 0 32PX;
+//     }
+// }
+
+// .rumor_false {
+//     .rumor_btn:first-child {
+//         background: #F1354B;
+//         color: #fff;
+//         border: none;
+//         padding: 0 32PX;
+//     }
+
+//     .rumor_btn:last-child {
+//         background: #65D69F;
+//         color: #fff;
+//         border: none;
+//         padding: 0 32PX;
+//     }
+// }

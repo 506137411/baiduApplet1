@@ -1,0 +1,23 @@
+<template name="renderGossip">
+    <block>
+        <view class="gossip_item" bindtap="goWebView" data-e-tap-so="this" data-e-tap-a-a="{{item}}">
+            <image src="{{item.image}}" style="width:90PX;height:90PX;" class="gossip_img"></image>
+            <view class="gossip-item_content">
+                <view class="gossip_item_title">{{item.title}}</view>
+                <view class="gossip_item_descript">{{item.summary}}</view>
+            </view>
+        </view>
+    </block>
+</template>
+<block s-if="{{$taroCompReady}}">
+    <view class="gossip_list">
+        <view class="gossip_title">
+            <image src="{{anonymousState__temp3}}" style="width:31PX;height:1PX;"></image>
+            <view class="gossip_title_t">科学流言月度榜单</view>
+            <image src="{{anonymousState__temp4}}" style="width:31PX;height:1PX;"></image>
+        </view>
+        <view class="gossip_list_content" s-for="loopArray20" s-for-item="item" s-for-index="index">
+            <template is="renderGossip" data="{{{...item.loopState__temp2}}}"></template>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,71 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    // height: 147PX;
+    margin: 9PX 0;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0PX 0PX 5PX 0PX rgba(183, 183, 183, 0.36);
+    border-radius: 2PX;
+
+    .item_img {
+        width: 105PX;
+        height: 105PX;
+        // padding: 14PX 10PX 28PX;
+        padding: 14PX 10PX;
+
+        .taro-img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .item_content {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-right: 2PX;
+    }
+
+    .item_title {
+        font-size: 16PX;
+        line-height: 24PX;
+        overflow: hidden; //超出文本隐藏
+        text-overflow: ellipsis; //溢出省略号显示
+        display: -webkit-box; //将对象作为弹性伸缩盒子
+        -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式-从上到下垂直排列
+        -webkit-line-clamp: 1;
+        height: 24PX;
+    }
+
+    .item_second {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12PX;
+        color: #9B9B9B;
+
+        .item_tag {
+            font-size: 12PX;
+            padding: 3PX 8PX;
+            margin-right: 2PX;
+            background: #BABABA;
+            color: #FFFFFF;
+            border-radius: 10PX;
+        }
+
+    }
+
+    .item_four {
+        font-size: 14PX;
+        line-height: 20PX;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-weight: 400;
+        color: #969696;
+        height: 40PX;
+    }
+}

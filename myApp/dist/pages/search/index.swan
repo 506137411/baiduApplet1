@@ -1,0 +1,23 @@
+<template name="renderTip">
+    <block>
+        <block s-if="{{!isNull}}">
+            <block s-if="{{!count}}">
+                <view class="search_tip">您搜索的关键词没有，请换一个</view>
+            </block>
+        </block>
+    </block>
+</template>
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <view class="search_container">
+            <view class="input_container">
+                <icon size="20" type="search" class="input_icon" color="#BEBEBE"></icon>
+                <input bindchange="inputChange" bindblur="inputBlur" bindkeypress="keypress" class="search_input" type="text" placeholder="请输入您要搜索的关键词" focus="{{true}}" data-e-change-so="this" data-e-blur-so="this" data-e-keypress-so="this" />
+                <block s-if="{{!isNull}}">
+                    <icon bindclick="clearKeyWords" size="20" type="clear" class="input_icon" data-e-click-so="this"></icon>
+                </block>
+            </view><text class="search_btn" catchtap="searchHandler" data-e-tap-so="this">搜索</text>
+        </view>
+        <template is="renderTip" data="{{{...anonymousState__temp}}}"></template>
+    </view>
+</block>

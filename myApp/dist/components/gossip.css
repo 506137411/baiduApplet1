@@ -1,0 +1,85 @@
+
+.gossip_list {
+  -webkit-box-shadow: 0PX 0PX 5PX 0PX rgba(183, 183, 183, 0.36);
+          box-shadow: 0PX 0PX 5PX 0PX rgba(183, 183, 183, 0.36);
+  margin: 20PX 0 40PX;
+  overflow: hidden;
+  border-radius: 4PX;
+  padding: 6PX; }
+  .gossip_list .gossip_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 27PX; }
+    .gossip_list .gossip_title .gossip_title_t {
+      font-size: 17PX;
+      font-weight: 600;
+      color: #4A90E2; }
+  .gossip_list .gossip_list_content {
+    border-bottom: 1PX dotted #979797; }
+  .gossip_list .gossip_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 4PX;
+    margin: 18PX 0; }
+    .gossip_list .gossip_item .gossip_img {
+      margin: 6PX 11PX 15PX; }
+    .gossip_list .gossip_item .gossip-item_content {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-left: 4PX;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      height: 100%; }
+      .gossip_list .gossip_item .gossip-item_content .gossip_item_title {
+        font-size: 16PX;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        padding-bottom: 10PX; }
+      .gossip_list .gossip_item .gossip-item_content .gossip_item_descript {
+        font-size: 14PX;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        color: #969696;
+        line-height: 20PX;
+        height: 60PX; }
+  .gossip_list .gossip_list_content:last-child {
+    border-bottom: none; }

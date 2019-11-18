@@ -1,0 +1,18 @@
+.history_item {
+    border-bottom: 1px solid #F5F5F5;
+    padding: 15PX 0;
+}
+
+.history_item:last-child {
+    border: none;
+}
+
+.history_title {
+    font-size: 17PX;
+}
+
+.history_time {
+    font-size: 12PX;
+    line-height: 24PX;
+    color: #B9B9B9;
+}

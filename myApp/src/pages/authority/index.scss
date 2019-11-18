@@ -1,0 +1,83 @@
+.container {
+    height: 100%;
+}
+
+.tab_container {
+    height: 100%;
+}
+// .tab_container_t {
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     background: #ffffff;
+//     z-index: 1;
+//     height: 99px;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+
+//     .tab_container_t_c {
+//         flex: 1;
+//         text-align: center;
+//         overflow-x: auto;
+//         white-space: nowrap;
+//         padding: 30px 15px;
+
+//         .tab_t {
+//             width: 128px;
+//             line-height: 64px;
+//             font-size: 32px;
+//             display: inline-block;
+//             padding: 0 24px;
+//             color: #969696;
+//             position: relative;
+
+//             .tab_brdge {
+//                 position: absolute;
+//                 right: -20px;
+//                 top: -16px;
+//                 z-index: 2;
+//             }
+//         }
+
+//         .active {
+//             color: #4A90E2;
+//         }
+//     }
+
+// }
+
+// .tab_container_t_i {
+//     position: static;
+// }
+
+// .aaa {
+//     height: 100%;
+//     // position: relative;
+//     overflow: hidden;
+// }
+
+// .tab_container_c {
+//     position: relative;
+//     overflow: hidden;
+//     height: 100%;
+
+//     .tab_c {
+//         margin-top: 100px;
+//         display: none;
+//         width: 100%;
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         height: 100%;
+
+//         .tab_c_scroll_view {
+//             // height: calc(100% - 120px);
+//             height: calc(100% - 140px);
+//         }
+//     }
+
+//     .active {
+//         display: block;
+//     }
+// }

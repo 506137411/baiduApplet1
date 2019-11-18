@@ -1,0 +1,364 @@
+
+html,
+body {
+  height: 100%; }
+
+.warp {
+  padding: 0 12PX; }
+
+.self_btn {
+  background: #4A90E2;
+  color: #fff;
+  text-align: center;
+  font-size: 17PX;
+  border-radius: 32PX;
+  padding: 13PX;
+  margin: 40PX 0; }
+
+.center {
+  text-align: center; }
+
+.submit {
+  font-size: 17PX;
+  padding: 13PX 0;
+  background: #4A90E2;
+  text-align: center;
+  border-radius: 32PX;
+  margin: 60PX auto;
+  color: #fff; }
+
+.unsubmit {
+  background: #F5F5F5;
+  color: #464646; }
+
+.hide {
+  display: none; }
+
+.detail-origin {
+  padding-left: 20PX; }
+
+.detail {
+  line-height: 30PX; }
+
+
+@charset "UTF-8";
+/**
+ * 百度小程序富文本解析
+ * 开发者：腾石建站
+ * 官网：http://www.tengcee.com
+ * bdParse.swan改造自wxParse.wxml
+ * wxParse的原作者github地址: https://github.com/icindy/wxParse
+ */
+.bdParse {
+  margin: 0 5rpx;
+  font-family: Helvetica, sans-serif;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8; }
+
+.bdParse view {
+  word-break: break-all;
+  overflow: auto; }
+
+.bdParse-inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  line-height: 30PX;
+  font-size: 17PX;
+  font-weight: 400; }
+
+/*//标题 */
+.bdParse-div {
+  margin: 0;
+  padding: 0; }
+
+.bdParse-h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+.bdParse-h2 {
+  font-size: 1.5em;
+  margin: .75em 0; }
+
+.bdParse-h3 {
+  font-size: 1.17em;
+  margin: .83em 0; }
+
+.bdParse-h4 {
+  margin: 1.12em 0; }
+
+.bdParse-h5 {
+  font-size: .83em;
+  margin: 1.5em 0; }
+
+.bdParse-h6 {
+  font-size: .75em;
+  margin: 1.67em 0; }
+
+.bdParse-h1 {
+  font-size: 18rpx;
+  font-weight: 400;
+  margin-bottom: .9em; }
+
+.bdParse-h2 {
+  font-size: 16rpx;
+  font-weight: 400;
+  margin-bottom: .34em; }
+
+.bdParse-h3 {
+  font-weight: 400;
+  font-size: 15rpx;
+  margin-bottom: .34em; }
+
+.bdParse-h4 {
+  font-weight: 400;
+  font-size: 14rpx;
+  margin-bottom: .24em; }
+
+.bdParse-h5 {
+  font-weight: 400;
+  font-size: 13rpx;
+  margin-bottom: .14em; }
+
+.bdParse-h6 {
+  font-weight: 400;
+  font-size: 12rpx;
+  margin-bottom: .04em; }
+
+.bdParse-h1,
+.bdParse-h2,
+.bdParse-h3,
+.bdParse-h4,
+.bdParse-h5,
+.bdParse-h6,
+.bdParse-b,
+.bdParse-strong {
+  font-weight: bolder; }
+
+.bdParse-i,
+.bdParse-cite,
+.bdParse-em,
+.bdParse-var,
+.bdParse-address {
+  font-style: italic; }
+
+.bdParse-pre,
+.bdParse-tt,
+.bdParse-code,
+.bdParse-kbd,
+.bdParse-samp {
+  font-family: monospace; }
+
+.bdParse-pre {
+  white-space: pre; }
+
+.bdParse-big {
+  font-size: 1.17em; }
+
+.bdParse-small,
+.bdParse-sub,
+.bdParse-sup {
+  font-size: .83em; }
+
+.bdParse-sub {
+  vertical-align: sub; }
+
+.bdParse-sup {
+  vertical-align: super; }
+
+.bdParse-s,
+.bdParse-strike,
+.bdParse-del {
+  text-decoration: line-through; }
+
+/*bdParse-自定义个性化的css样式*/
+/*增加video的css样式*/
+.bdParse-strong,
+.bdParse-s {
+  display: inline; }
+
+.bdParse-a {
+  color: deepskyblue;
+  word-break: break-all;
+  overflow: auto; }
+
+.bdParse-video {
+  text-align: center;
+  margin: 10rpx 0; }
+
+.bdParse-video-video {
+  width: 100%; }
+
+.bdParse-img {
+  /*background-color: #efefef;*/
+  overflow: hidden;
+  margin: 0 auto; }
+
+.bdParse-blockquote {
+  margin: 0;
+  padding: 10rpx 0 10rpx 5rpx;
+  font-family: Courier, Calibri, "宋体";
+  background: #f5f5f5;
+  border-left: 3rpx solid #dbdbdb; }
+
+.bdParse-code,
+.bdParse-wxxxcode-style {
+  display: inline;
+  background: #f5f5f5; }
+
+.bdParse-ul {
+  margin: 20rpx 10rpx; }
+
+.bdParse-li,
+.bdParse-li-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 10rpx 0; }
+
+.bdParse-li-text {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20rpx; }
+
+.bdParse-li-circle {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 5rpx;
+  height: 5rpx;
+  background-color: #333;
+  margin-right: 5rpx; }
+
+.bdParse-li-square {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  margin-right: 5rpx; }
+
+.bdParse-li-ring {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  border: 2rpx solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5rpx; }
+
+/*.bdParse-table{
+    width: 100%;
+    height: 400px;
+}
+.bdParse-thead,.bdParse-tfoot,.bdParse-tr{
+    display: flex;
+    flex-direction: row;
+}
+.bdParse-th,.bdParse-td{
+    display: flex;
+    width: 580px;
+    overflow: auto;
+}*/
+.bdParse-u {
+  text-decoration: underline; }
+
+.bdParse-hide {
+  display: none; }
+
+.WxEmojiView {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.wxEmoji {
+  width: 16rpx;
+  height: 16rpx; }
+
+.bdParse-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1rpx solid #e0e0e0;
+  border-bottom: 1rpx solid #e0e0e0;
+  border-top: 1rpx solid #e0e0e0; }
+
+.bdParse-th,
+.bdParse-td {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rpx;
+  font-size: 28rpx;
+  border-left: 1rpx solid #e0e0e0;
+  word-break: break-all; }
+
+.bdParse-td:last {
+  border-top: 1rpx solid #e0e0e0; }
+
+.bdParse-th {
+  background: #f0f0f0;
+  border-top: 1rpx solid #e0e0e0; }
+
+.bdParse-del {
+  display: inline; }
+
+.bdParse-figure {
+  overflow: hidden; }
+
+.bdParse-br {
+  height: 10rpx;
+  line-height: 10rpx;
+  overflow: hidden; }
+
+.bdParse-p {
+  display: block;
+  line-height: 100%;
+  padding-bottom: 10PX; }
+
+
+.detail-title {
+  font-size: 22PX;
+  line-height: 31PX; }
+
+.detail-time {
+  font-size: 13PX;
+  padding: 8PX 0;
+  color: #B9B9B9; }
+  .detail-time View {
+    padding-right: 18PX; }
+
+.detail_des {
+  font-size: 17PX;
+  line-height: 30PX;
+  font-weight: 400;
+  color: #262628; }
+
+.detail_links {
+  font-size: 15PX;
+  padding: 15PX 0; }
+  .detail_links .detail_link {
+    color: #3495FF;
+    word-wrap: break-word;
+    word-break: normal;
+    word-break: break-all; }
+
+.detail {
+  padding-bottom: 20PX; }

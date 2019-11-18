@@ -1,0 +1,26 @@
+.instruction_item {
+    font-size: 16PX;
+    padding: 8PX 0;
+    text-indent: 2em;
+    font-weight: 400;
+}
+
+.taro-checkbox_checked {
+    color: #4A90E2;
+}
+
+.checkbox-list__label {
+    font-size: 12PX;
+
+    .checkbox-list__checkbox {
+        width: 28PX;
+        height: 28PX;
+        // position: relative;
+        // top: 1PX;
+        // margin-right: 3PX;
+    }
+
+    .special_text {
+        color: #4A90E2;
+    }
+}

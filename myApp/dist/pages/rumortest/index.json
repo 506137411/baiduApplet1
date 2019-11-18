@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mask": "../../components/mask"
+  },
+  "navigationBarTitleText": "谣言测试"
+}

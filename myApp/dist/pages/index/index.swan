@@ -1,0 +1,16 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="index">
+        <view class="warp">
+            <search></search>
+            <view class="nav_list">
+                <image catchtap="navHandler" open-type="getPhoneNumber" s-key="id" src="{{item.url}}" style="width:103PX;height:45PX" s-for="list" s-for-item="item" s-for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{index}}"></image>
+            </view>
+        </view>
+        <view class="index_authority">
+            <alist compid="{{$compid__21}}"></alist>
+        </view>
+        <view class="warp">
+            <gossip compid="{{$compid__22}}"></gossip>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,23 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="container">
+        <view class="warp">
+            <view class="history"><text bindtap="goToHistoryList" data-e-tap-so="this">历史记录</text>
+            </view>
+            <view class="info_item">
+                <input type="text" bindchange="titleInputChange" value="{= titleInputValue =}" maxlength="30" placeholder="请输入谣言标题，限制30字符" data-e-change-so="this" />
+            </view>
+            <view class="info_item">
+                <textarea bindinput="textareaChange" value="{= textareaValue =}" style="background:#fff;min-height:265PX;" auto-height="{{true}}" placeholder="请填写谣言内容，限制1000字符" maxlength="1000" data-e-input-so="this"></textarea>
+                <view class="info_item_tip_info"><text class="info_item_tip_info_text">{{textareaValue.length}}/{{textareaMaxLength}}</text>
+                </view>
+            </view>
+            <view class="info_item">
+                <input bindchange="linkInputChange" value="{= linkInputValue =}" type="text" class="info_item_link" placeholder="请输入谣言链接地址" data-e-change-so="this" />
+            </view>
+            <view class="info_item">
+                <input bindchange="originInputChange" value="{= originInputValue =}" type="text" placeholder="请输入谣言来源" data-e-change-so="this" />
+            </view>
+            <view class="{{anonymousState__temp}}" bindtap="addRumor" data-e-tap-so="this">提交</view>
+        </view>
+    </view>
+</block>

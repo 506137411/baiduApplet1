@@ -1,0 +1,6 @@
+<block s-if="{{$taroCompReady}}">
+    <view catchtap="goToDetail" class="history_item" data-e-tap-so="this" data-e-tap-a-a="{{id}}">
+        <view class="history_title">{{title}}</view>
+        <view class="history_time">{{create_time}}</view>
+    </view>
+</block>

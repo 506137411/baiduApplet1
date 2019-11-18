@@ -1,0 +1,9 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="search_content">
+        <image src="{{anonymousState__temp}}" style="width:85PX;height:20PX;"></image>
+        <view class="search_inputc" catchtap="searchHandler" data-e-tap-so="this">
+            <icon class="search_inputc_icon" size="20" type="search" color="#BEBEBE"></icon>
+            <input class="search_inputc_i" placeholder="请输入您要搜索的关键词" disabled="{{true}}" />
+        </view>
+    </view>
+</block>

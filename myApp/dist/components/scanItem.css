@@ -1,0 +1,80 @@
+
+.item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 9PX 0;
+  background: white;
+  -webkit-box-shadow: 0PX 0PX 5PX 0PX rgba(183, 183, 183, 0.36);
+          box-shadow: 0PX 0PX 5PX 0PX rgba(183, 183, 183, 0.36);
+  border-radius: 2PX; }
+  .item .item_img {
+    width: 105PX;
+    height: 105PX;
+    padding: 14PX 10PX; }
+    .item .item_img .taro-img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%; }
+  .item .item_content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 2PX; }
+  .item .item_title {
+    font-size: 16PX;
+    line-height: 24PX;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 24PX; }
+  .item .item_second {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 12PX;
+    color: #9B9B9B; }
+    .item .item_second .item_tag {
+      font-size: 12PX;
+      padding: 3PX 8PX;
+      margin-right: 2PX;
+      background: #BABABA;
+      color: #FFFFFF;
+      border-radius: 10PX; }
+  .item .item_four {
+    font-size: 14PX;
+    line-height: 20PX;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 400;
+    color: #969696;
+    height: 40PX; }

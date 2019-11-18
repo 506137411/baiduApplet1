@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rumortest/index",
+    "pages/login/index",
+    "pages/search/index",
+    "pages/history/index",
+    "pages/instructions/index",
+    "pages/authority/index",
+    "pages/informations/index",
+    "pages/infomationdetail/index",
+    "pages/detail/index",
+    "pages/webview/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

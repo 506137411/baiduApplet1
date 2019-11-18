@@ -1,0 +1,32 @@
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+    padding: 12PX;
+}
+
+.index_authority {
+    height: auto;
+    overflow: hidden;
+}
+
+.index {
+    height: 100%;
+}
+
+.tab_container_c {
+    position: static;
+}
+
+.self_btn{
+    padding: 0;
+    border:none;
+    margin:0;
+    border-radius: 0;
+    line-height: initial;
+    font-size: initial;
+    background: none;
+}
+
+.self_btn:after{
+    border: none;
+}

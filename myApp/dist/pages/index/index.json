@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "../../components/search",
+    "alist": "../../components/aList",
+    "gossip": "../../components/gossip"
+  },
+  "navigationBarTitleText": "科学辟谣"
+}

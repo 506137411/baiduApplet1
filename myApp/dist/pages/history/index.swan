@@ -1,0 +1,22 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="container">
+        <block>
+            <block s-if="{{historylist.length}}">
+                <scroll-view class="warp" scroll-y="{{true}}" scroll-with-animation="{{true}}" catchscrolltolower="onScroll" data-e-scrolltolower-so="this">
+                    <view>
+                        <hitem s-for="loopArray25" s-for-item="item" s-for-index="index" compid="{{item.$compid__20}}"></hitem>
+                    </view>
+                </scroll-view>
+            </block>
+            <block s-else>
+                <view class="center history_content_tip">
+                    <view class="history_content_tip_view">
+                        <image src="{{historyImgUrl}}" style="{{anonymousState__temp}}"></image>
+                        <view class="history_tip">还没有提交过谣言线索</view>
+                        <view style="{{anonymousState__temp2}}"></view>
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+</block>

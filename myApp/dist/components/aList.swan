@@ -1,0 +1,29 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="{{anonymousState__temp}}">
+        <view class="{{anonymousState__temp2}}">
+            <scroll-view class="tab_container_t_c" scroll-x="{{true}}" scroll-with-animation="{{true}}" scroll-left="{= scrollLeft =}">
+                <view class="{{['tab_t', index == current ? 'active' : '']}}" s-key="id" bindtap="navHandler" s-for="nav" s-for-item="item" s-for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{index}}">{{item.title}}
+                    <block s-if="{{item.brdge}}"><text class="tab_brdge">HOT</text>
+                    </block>
+                </view>
+            </scroll-view>
+        </view>
+        <scroll-view class="{{anonymousState__temp3}}" scroll-x="{{true}}" scroll-with-animation="{{true}}" scroll-left="{= scrollLeft =}">
+            <view class="{{['tab_c', index == current ? 'active' : '']}}" s-for="loopArray19" s-for-item="item" s-for-index="index">
+                <block>
+                    <block s-if="{{isIndex}}">
+                        <scanlist compid="{{item.$compid__16}}"></scanlist>
+                    </block>
+                    <block s-else>
+                        <scroll-view class="tab_c_scroll_view" scroll-y="{{true}}" scroll-with-animation="{{true}}" bindscrolltolower="onScroll" data-e-scrolltolower-so="this">
+                            <scanlist compid="{{item.$compid__17}}"></scanlist>
+                            <block s-if="{{item.loopState__temp5}}">
+                                <view class="list_end_tip">已经到底啦</view>
+                            </block>
+                        </scroll-view>
+                    </block>
+                </block>
+            </view>
+        </scroll-view>
+    </view>
+</block>

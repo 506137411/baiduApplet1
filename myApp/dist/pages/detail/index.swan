@@ -1,0 +1,11 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <view class="detail-title">{{title}}</view>
+        <view class="detail-time"><text>{{shelve_time}}</text><text class="detail-origin">{{origin}}</text>
+        </view>
+        <view class="detail">
+            <import src="../../bdParse/bdParse/bdParse.swan" />
+            <template is="bdParse" data="{{ {bdParseData:article.nodes} }}"></template>
+        </view>
+    </view>
+</block>

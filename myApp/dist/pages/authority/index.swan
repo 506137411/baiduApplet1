@@ -1,0 +1,5 @@
+<block s-if="{{$taroCompReady}}">
+    <view style="height:100%">
+        <alist compid="{{$compid__23}}"></alist>
+    </view>
+</block>

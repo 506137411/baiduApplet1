@@ -1,0 +1,11 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="mask">
+        <view class="mask_content">
+            <view class="mask_content_title">真相解读</view>
+            <view class="mask_content_detail">
+                <slot></slot>
+            </view>
+            <view class="mask_content_btn" bindtap="funPrivatecbzzz">学习了</view>
+        </view>
+    </view>
+</block>

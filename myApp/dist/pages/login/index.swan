@@ -1,0 +1,16 @@
+<block s-if="{{$taroCompReady}}">
+    <view class="warp">
+        <view class="login_container">
+            <view class="login_container_line">
+                <image style="{{anonymousState__temp}}" src="{{phone14}}"></image>
+                <input type="number" placeholder="请输入手机号" value="{= phone =}" bindchange="phoneHandler" catchblur="checkPhone" data-e-change-so="this" data-e-blur-so="this" />
+            </view>
+            <view class="login_container_line">
+                <image style="{{anonymousState__temp2}}" src="{{verificationCode3}}"></image>
+                <input type="text" placeholder="请输入验证码" value="{= verificationCode =}" bindchange="verificationCodeHandler" catchblur="checkCode" data-e-change-so="this" data-e-blur-so="this" />
+                <view class="getCode" bindtap="sendSMS" data-e-tap-so="this">{{codeinfo}}</view>
+            </view>
+        </view>
+        <view class="submit" catchtap="submit" data-e-tap-so="this">绑定手机号</view>
+    </view>
+</block>

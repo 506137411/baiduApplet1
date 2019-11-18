@@ -1,0 +1,48 @@
+
+html,
+body {
+  height: 100%; }
+
+.warp {
+  padding: 0 12PX; }
+
+.self_btn {
+  background: #4A90E2;
+  color: #fff;
+  text-align: center;
+  font-size: 17PX;
+  border-radius: 32PX;
+  padding: 13PX;
+  margin: 40PX 0; }
+
+.center {
+  text-align: center; }
+
+.submit {
+  font-size: 17PX;
+  padding: 13PX 0;
+  background: #4A90E2;
+  text-align: center;
+  border-radius: 32PX;
+  margin: 60PX auto;
+  color: #fff; }
+
+.unsubmit {
+  background: #F5F5F5;
+  color: #464646; }
+
+.hide {
+  display: none; }
+
+.detail-origin {
+  padding-left: 20PX; }
+
+.detail {
+  line-height: 30PX; }
+
+
+.container {
+  height: 100%; }
+
+.tab_container {
+  height: 100%; }

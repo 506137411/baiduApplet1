@@ -1,0 +1,10 @@
+<block s-if="{{$taroCompReady}}">
+    <view>
+        <view class="scan_list">
+            <view class="scan_noop"></view>
+            <view class="warp">
+                <scanitem s-key="privateOriginal.id" s-for="loopArray22" s-for-item="item" s-for-index="index" compid="{{item.$compid__18}}">{{index}}</scanitem>
+            </view>
+        </view>
+    </view>
+</block>

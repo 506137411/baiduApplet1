@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "alist": "../../components/aList"
+  },
+  "navigationBarTitleText": "权威发布"
+}
